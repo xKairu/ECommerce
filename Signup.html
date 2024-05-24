@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeoo</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="LOGOMEEOO.png" width="90px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="Index.html">𝕳𝖔𝖒𝖊</a></li>
+                        <li><a href="AboutUs.html">𝕬𝖇𝖔𝖚𝖙 𝖚𝖘</a></li>
+                        <li><a href="#">𝕮𝖔𝖓𝖙𝖆𝖈𝖙</a></li>
+                        <li><a href="#">𝕾𝖍𝖔𝖕</a></li>
+                        <li><a href="Signup.html">𝕾𝖎𝖌𝖓 𝖚𝖕</a></li>
+                    </ul>
+                </nav>
+                <a href="ADD.html"> <img src="cartremove.png" width="30px" height="30px" alt="Shopping Cart"> </a>
+               
+            </div>
+        </div>
+    </div>
+	  <div class="center-justify">
+			<br>
+			<br>
+			<br>
+			
+			<br>
+			<br>
+			<br>
+        <h2>─── ⋆⋅☆⋅⋆ ── 𝕵𝖔𝖎𝖓 𝖙𝖍𝖊 𝕰𝖙𝖊𝖗𝖓𝖎𝖙𝖞 𝕹𝖔𝖜 ─── ⋆⋅☆⋅⋆ ──</h2> 
+		
+		<br>
+		🖤🦇🥀⛓
+		<br>
+		<br>
+		
+        <form action="appointment_confirmation.html" method="post">
+            <label for="name">╰┈➤ 𝕹𝖆𝖒𝖊: </label>
+            <input type="text" id="name" name="name" required> : ̗̀➛
+			<br>
+			<br>
+            <label for="email">╰┈➤ 𝕰𝖒𝖆𝖎𝖑: </label>
+            <input type="email" id="email" name="email" required> : ̗̀➛
+			<br>
+			<br>
+            <label for="service">╰┈➤ 𝕮𝖎𝖙𝖞: </label>
+            <select id="service" name="service" required onchange="updatePrice()"> : ̗̀➛
+			<br>
+			<br>
+                <option value="Davao">Davao City</option>
+                <option value="Manila">Manila</option>
+                <option value="Palayan">Palayan City</option>
+                <option value="Quezon">Quezon City</option>                
+                <option value="Zamboanga">Zamboanga</option>
+                <option value="Antipolo">Antipolo </option>
+                <option value="Cagayan de Oro">Cagayan de Oro</option>
+                <option value="Baguio">Baguio</option>                
+                <option value="Pasig">Pasig</option>
+                <option value="Tarlac">Tarlac City</option>
+                <option value="Bayawan">Bayawan City</option>
+                <option value="Himamaylan City">Himamaylan City</option>             
+                <option value="Gapan City">Gapan City</option>
+                <option value="Cabadbaran City">Cabadbaran City</option>
+                <option value="Bayugan City">Bayugan City</option>
+                <option value="Ilagan">Ilagan</option>
+                <option value="Cavite City">Cavite City</option>
+                <option value="Tagaytay">Tagaytay</option>
+                <option value="Batac">Batac</option>
+                <option value="Gingoog">Gingoog</option>                
+                <option value="Vigan City">Vigan City</option>
+                <option value="Legazpi City">Legazpi City </option>
+                <option value="Dumaguete">Dumaguete</option>
+                <option value="Lamitan City">Lamitan City</option>                
+                <option value="Talisay">Talisay</option>
+                <option value="Tagbilaran City">Tagbilaran City</option>
+                <option value="Danao City">Danao City</option>
+                <option value="Caloocan">Caloocan</option>             
+                <option value="San Fernando">San Fernando</option>
+                <option value="Carcar City">Carcar City</option>
+                <option value="Butuan City">Butuan City</option>
+                <option value="Taguig">Taguig</option>
+                <option value="Pasay">Pasay</option>
+                <option value="Bacolod">Bacolod</option>
+                <option value="Isabela City">Isabela City</option>
+                <option value="Calamba">Calamba</option>                
+                <option value="Navotas">Navotas</option>
+                <option value="Makati">Makati </option>
+                <option value="Dasmariñas">Dasmariñas</option>
+                <option value="Bacoor">Bacoor</option>                
+                <option value="San Pedro">San Pedro</option>
+                <option value="Escalante City">Escalante City</option>
+                <option value="Valenzuela">Valenzuela</option>
+                <option value="Cotabato City">Cotabato City</option>             
+                <option value="Passi City">Passi City</option>
+                <option value="Angeles">Angeles</option>
+                <option value="Malaybalay">Malaybalay</option>
+                <option value="Urdaneta">Urdaneta</option>
+                <option value="Maasin City">Maasin City</option>
+            </select> : ̗̀➛
+			
+            <div class="price">
+
+            <span id="price"></span><br></div>
+            
+
+            <label for="date">╰┈➤ 𝕰𝖓𝖙𝖊𝖗 𝕭𝖎𝖗𝖙𝖍 𝕯𝖆𝖙𝖊: </label>
+            <input type="date" id="date" name="date" required> : ̗̀➛
+			<br>
+			<br>
+
+            ╰┈➤ <button type="button" onclick="submitForm()">⋆♱✮♱⋆ 𝕵𝖔𝖎𝖓 𝕹𝖔𝖜 ⋆♱✮♱⋆</button> : ̗̀➛
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+        </form>
+    </section>
+
+     <div class="footer">
+                <div class="footer-col-2">
+                    <img src="LOGOMEEOO.png">
+                    <p>"Fashion fades, but style is eternal." - Yves Saint Laurent</p>
+					<p>Meeoo©</p>
+                </div>
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight === "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

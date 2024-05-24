@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeoo</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="LOGOMEEOO.png" width="90px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Shop</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>                       
+                    </ul>
+                </nav>
+                <a href="ADD.html"> <img src="cartremove.png" width="30px" height="30px" alt="Shopping Cart"> </a>
+               
+            </div>
+        </div>
+    </div>
+	<div class="parent-container">
+		<div class="center-justify">
+	
+	        <p>Start your style journey by owning a well-rounded range of shirts, sweaters, and jeans.             
+            Find new inspiration through our fashion-focused edits, ranging from spotlight-stealing crop tops and cool looking leather jackets.
+            Stay warm with our limited edition Meeoo Sweater and don’t forget to match your outfit with the right shoes, be they classic flats, high heels, boots, or leather shoes. 
+            Prep yourself for all seasons by shopping from a complete range of outerwear, from lightweight jackets to cozy sweaters to heavy-duty coats. </p>	    
+	    
+        </div>
+	</div>
+
+     <div class="footer">
+                <div class="footer-col-2">
+                    <img src="LOGOMEEOO.png">
+                    <p>"Fashion fades, but style is eternal." - Yves Saint Laurent</p>
+					<p>Meeoo©</p>
+                </div>
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight === "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    
+
+</body>
+
+</html>

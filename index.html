@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meeoo's Streetwear">
+    <title>Meeoo</title>
+    <link rel="stylesheet" href="style.css">
+	
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="LOGOMEEOO.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="#" onclick="scrollToProduct()">Shop</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>                       
+                    </ul>
+                </nav>
+                <a href="ADD.html"> <img src="cartremove.png" width="30px" height="30px" alt="Shopping Cart"> </a>
+ 
+            </div>
+            <div class="row">
+                <div class="col-2">
+				
+                    <h1>𝕾𝖙𝖞𝖑𝖊 𝕭𝖊𝖞𝖔𝖓𝖉 𝕭𝖔𝖚𝖓𝖉𝖆𝖗𝖎𝖊𝖘.<br>𝖄𝖔𝖚𝖗 𝕾𝖙𝖞𝖑𝖊 𝕾𝖙𝖔𝖗𝖞 𝕾𝖙𝖆𝖗𝖙𝖘 𝕳𝖊𝖗𝖊.</h1>
+                    <p>"Clothing that speaks volumes, style that echoes individuality."</p>
+                    <a href="#" onclick="scrollToProduct()" class="btn">Closets &#8594;</a>
+					
+                </div>
+				
+                <div class="col-2">
+                    <img src="SWEATER1.gif" width="600px" class="moved-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="small-container" id="productSection">
+        <h2 class="title">𝕿𝖔𝖕 𝕮𝖍𝖔𝖎𝖈𝖊𝖘</h2>
+        <div class="row">
+		
+            <!-- Product 1 -->
+            <div class="col-4">
+                <a href="Sweater.html"><img src="Sweater1.png"></a>
+                <h4><a href="Sweater.html">Meeoo Eye Sweater</a></h4>
+                <p>$300.00</p>
+            </div>
+			
+            <!-- Product 2 -->
+            <div class="col-4">
+                <a href="Pants.html"><img src="pants1.png"></a>
+                <h4><a href="Pants.html">Meeoo Star Ripped Jeans</a></h4>
+                <p>$150.00</p>
+            </div>
+			
+            <!-- Product 3 -->
+            <div class="col-4">
+                <a href="Croptop.html"><img src="CROPTOP1.png"></a>
+                <h4><a href="Croptop.html">Meeoo Graphic Crop Top</a></h4>
+                <p>$100.00</p>
+            </div>
+			
+            <!-- Product 4 -->
+            <div class="col-4">
+                <a href="Jacket.html"><img src="Jacket1.png"></a>
+                <h4><a href="Jacket.html">Meeoo Teddy Lined Leather Jacket</a></h4>
+                <p>$550.00</p>
+            </div>
+			
+			
+        </div>
+		
+
+
+  <div class="footer">
+                <div class="footer-col-2">
+                    <img src="LOGOMEEOO.png">
+                    <p>"Fashion fades, but style is eternal." - Yves Saint Laurent</p>
+					<p>Meeoo©</p>
+                </div>
+				
+<!--------------js for toggle menu------------>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if (MenuItems.style.maxHeight === "0px") {
+            MenuItems.style.maxHeight = "200px";
+        } else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+<!--------------JavaScript for scrolling to product section------------>
+    <script>
+        function scrollToProduct() {
+            var productSection = document.getElementById("productSection");
+            productSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
